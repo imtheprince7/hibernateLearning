@@ -31,15 +31,24 @@ public class _Theory_Notes2 {
 // Password Declaration
  			<property name = "connection.password"> root </property>  
  
-// dialect [ basically define which database query Hibernate has to perform.( mysql, oracle, msAccess)
+// dialect  
+ 	<!-- We use dialect to provide information about which database we are using,( mysql, oracle, msAccess)
  			<property name = "dialect"> org.hibernate.dialect.MySQLDialect </property>
 			
-// ddl- create type ( everyTime when it execute create a new table\ update the existing table
+// ddl-  
+ 	<!-- This property enables us to update the table everytime the program runs-->
   			<property name = "hbm2ddl.auto"> update </property>
 
 //show_sql [ show the written query on console]
   			<property name = "show_sql"> true </property>
  
+ 
+
+
+ <!----------       List of XML mapping files   -------------------->
+ 		<!-- path of a mapping file, Here Student class and Address class which is a POJO -->
+ 	
+ 	<mapping class= "pacakeName.className" />
  
  
 			</session-factory>
@@ -47,7 +56,7 @@ public class _Theory_Notes2 {
 			
 			
 
-	We map define class inside the session-factory.
+	We map classes  inside the session-factory, just after the database configuration
 	
 
 	

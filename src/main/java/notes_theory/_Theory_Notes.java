@@ -2,8 +2,9 @@ package notes_theory;
 public class _Theory_Notes {
 /*	
 			HIBERNATE
-Hibernate is java framework that simplifies the development of
-java application to interact with the database.
+	
+	1. The motive of using a hibernate is to skip the SQL part and focus on core java concepts.
+	2. Hibernate is java framework that simplifies the development of java application to interact with the database.
 
 
 Hibernate is an Open source, and Lightweight.
@@ -31,8 +32,8 @@ database using JDBC.
 ========================== Hibernate Role  ===========================================
 
 We define instance variable/ class by annotation 
-and it write all the code auto-matically by hibernate.
-Hibernate just keep the object and store in the database.
+and it write all the code auto-matically.
+Hibernate just keep the object(class's instance which is similar to column in table)	 and store in the database.
 We have to do only mapping--and call save().
 Object---> Hibernate ---> Table.
 
